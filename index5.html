@@ -1,0 +1,95 @@
+<div class="main">
+  <div class="el1 el"></div>
+  <div class="el2 el"></div>
+  <div class="el3 el"></div>
+</div>
+<style>
+  *{
+    margin: 0;
+  }
+  body{
+    background-color: #0B2429;
+  }
+  .main{
+    height: 100%;
+    position: relative;
+  }
+  .el {
+    width: 120px;
+    height: 120px;
+    background: #F3AC3C;
+    position: absolute;
+  }
+  .el1, .el2{
+    border-radius: 50% 0 50% 50%;
+  }
+  .el2{
+    background: #998235;
+  }
+  .el3{
+    border-radius :50%;
+  }
+  .el1{
+    bottom:30px;
+    left: 80px;
+    z-index:1;
+  }
+  .el2{
+    bottom:90px;
+    left: 140px;
+    z-index: 0;
+  }
+  .el3{
+    bottom:150px;
+    left: 200px;
+    z-index:-1;
+  }
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting --><div class="main">
+  <div class="el1 el"></div>
+  <div class="el2 el"></div>
+  <div class="el3 el"></div>
+</div>
+
+<style>
+  *{
+    margin: 0;
+  }
+  body{
+    background-color:#62306D;
+  }
+
+  .main{
+    position: relative;
+    display: flex;
+    height: 100%;
+  }
+  
+  .el{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #F7EC7D;
+    border-radius: 0 0 50% 50%;
+  }
+    .el1{
+    bottom: 50px;
+    left: 50px;
+  }
+  .el2{
+    bottom: 150px;
+    left: 150px;
+    transform: rotate(180deg)
+  }
+  .el3{
+    bottom: 50px;
+    left: 250px;  
+  }
+</style>

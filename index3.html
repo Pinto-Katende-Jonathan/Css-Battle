@@ -1,0 +1,58 @@
+<div class="main">
+  <div class="rectangle"></div>
+  <div class="big1-circle">
+    <div class="mid-circle">
+      <div class="small-circle"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body{
+    background-color:#6592CF;
+  }
+  
+  body,.big1-circle,.mid-circle{
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+  .main{
+    height:250px;
+    width:300px;
+    position:relative;
+  }
+  
+  .rectangle{
+    height:150px;
+    width:300px;
+    background-color:#243D83;
+    position:absolute;
+    left:0;
+    top:50px;
+  }
+  
+  .big1-circle{
+    position:absolute;
+    top:5px;
+    left:25px;
+    height:240px;
+    width:250px;
+    border-radius:50%;
+    background-color:#6592CF;
+  }
+  
+  .mid-circle{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    background-color:#243D83;
+  }
+  
+  .small-circle{
+    height:50px;
+    width:50px;
+    background-color:#EEB850;
+    border-radius:50%;
+  }
+</style>

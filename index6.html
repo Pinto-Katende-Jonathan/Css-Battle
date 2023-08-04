@@ -1,0 +1,40 @@
+<div class="main-rect">
+  <div class="rectangle rect1" style="--color: #51B5A9;"></div>
+  <div class="rectangle rect2" style="--color: #FADE8B;"></div>
+  <div class="rectangle rect3" style="--color: #F7F3D7;"></div>
+</div>
+
+<style>
+  *{margin:0}
+    body{
+      background-color: #E3516E;
+    }
+
+  .main-rect{
+    height: 100%;
+    position: relative;
+	max-height: 400px;
+	max-width: 300px
+  }
+    .rect1, .rect2, .rect3, .rect4 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: var(--color);
+    }
+  .rect1{
+    inset:50px 100px;
+    border-top-left-radius: 100%;
+  }
+
+  .rect2{
+    inset:50px 200px;
+    border-top-right-radius: 100%;
+  }
+
+	.rect3 {
+		top: 150px;
+		right: 100px;
+		border-bottom-left-radius: 100%;
+	}
+</style>

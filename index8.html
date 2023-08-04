@@ -1,0 +1,76 @@
+<div class="fork">
+    <div class="cup">
+      <div class="main-stem">
+      <div class="cup-stem"></div>
+      <div class="cup-stem"></div>
+      <div class="cup-stem"></div>
+      <div class="cup-stem"></div>
+      <div class="cup-stem"></div>
+      <div class="cup-stem"></div>
+      <div class="cup-stem"></div>
+      </div>
+    </div>
+    <div class="stem"></div>
+</div>
+
+<style>
+  *{
+    margin:0;
+  }
+
+  body{
+    background-color: #6592CF;
+	height: 100%	;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+  }
+  .fork{
+    width:140px;
+    height: 250px;
+    position:relative;
+  }
+  .cup{
+    position:absolute;
+    background-color: #060F55;
+    top: 0;
+    height: 200px;
+    width: 100%;
+    border-radius: 0% 0%  40% 40%;
+    overflow: hidden;
+  }
+
+  .main-stem{
+    display: flex;
+    width: 100%;
+    height: 11px;
+    background-color: #6592CF;
+  }
+  
+  .fork .stem{
+    width: 20px;
+    height: 50px;
+    background-color: #060F55;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  .cup-stem{
+    width: calc(140 / 7 * 1px);
+    height: 110px;
+    background-color: white;
+  }
+
+  .cup-stem:nth-child(odd) {
+    border-radius: 45px 45px 0 0;
+    background-color: #060F55;
+  }
+
+  .cup-stem:nth-child(even){
+    border-radius: 0 0 45px 45px;
+    background-color: #6593CF;
+  }
+
+</style>

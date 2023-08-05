@@ -1,0 +1,94 @@
+<div class="big-circle">
+  <div class="small-circle"></div>
+  <div class="fake-circle">
+    <div class="oval el1"></div>
+    <div class="oval el2"></div>
+    <div class="oval el3"></div>
+    <div class="oval el4"></div>
+    <div class="oval el5"></div>
+    <div class="oval el6"></div>
+    <div class="oval el7"></div>
+    <div class="oval el8"></div>
+  </div>
+  
+</div>
+<style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3516E;
+  }
+  
+  .big-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FADE8B;
+    position: relative;
+  }
+
+    .small-circle{
+    position: absolute;
+    background-color: #E3516E;
+    }
+
+    .fake-circle{
+    background-color: #E3516E;
+    position: relative;
+    }
+  
+  .small-circle, .fake-circle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .oval{
+    --size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #E3516E;
+  }
+
+  .el1{
+    transform: translate(-50%, -270%) rotate(0deg);
+  }
+
+  .el2{
+    transform: translate(185%, -200%) rotate(45deg);
+  }
+
+  
+  .el3{
+    transform: translate(270%,-50%) rotate(90deg);
+  }
+  .el4{
+    transform: translate(180%, 100%) rotate(135deg);
+  }
+
+  .el5{
+    transform: translate(-50%, 165%);
+  }
+
+    .el6{
+    transform: translate(-280%, 100%) rotate(45deg);
+  }
+  
+  .el7{
+    transform: translate(-375%,-50%) rotate(90deg)
+  }
+
+  .el8{
+        transform: translate(-275%, -205%) rotate(315deg);
+  }
+    
+</style>
